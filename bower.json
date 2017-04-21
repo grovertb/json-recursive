@@ -1,0 +1,22 @@
+{
+  "name": "json-recursive",
+  "authors": [
+    "GroverTB <grover.jtb@gmail.com>"
+  ],
+  "description": "Bookstore to crud an object (find, update, remove, push) recursively",
+  "main": "index.js",
+  "keywords": [
+    "recursive",
+    "json",
+    "crud"
+  ],
+  "license": "MIT",
+  "homepage": "http://grovertb.github.io/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
