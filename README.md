@@ -1,5 +1,5 @@
 # json-recursive
-`
+```javascript
 var collection = [
     {
       "nombre": "Villareal",
