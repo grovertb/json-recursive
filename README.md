@@ -70,21 +70,21 @@ var collection = [
       ]
     }
   ]
-`
+```
 ## Functions
 
-`
+```javascript
 collection.findAll({ 'carreras.cursos.nombre': 'cuantica'})
-`
+```
 
-`
+```javascript
 collection.chain()
   .findAll('carreras.cursos.nombre': 'cuantica')
   .updateAll({'nombre': 'mecanica'})
   .value()
-`
+```
 
-`
+```javascript
 collection.chain()
   .pushAll({'carreras.cursos.nombre': 'cuantica'}, {'nombre': 'javascript', 'id': 100})
   .value()
@@ -94,10 +94,10 @@ collection.chain()
   .findAll({"carreras.rating": 4.3})
   .pushAll({"cursos": {'nombre': 'javascript', 'id': 100})
   .value()
-`
+```
 
-`
+```javascript
 collection.chain()
   .removeAll({'carreras.cursos.nombre': 'cuantica'})
   .value()
-`
+```
