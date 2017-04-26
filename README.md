@@ -80,18 +80,18 @@ var jr = require('json-recursive');
 
 ## findAll
 ```javascript
-    jr.findAll(collection, { 'carreras.cursos.nombre': 'cuantica'})
+jr.findAll(collection, { 'carreras.cursos.nombre': 'cuantica'})
 ```
 ## updateAll
 ```javascript
-    jr.updateAll(collection, {'carreras.cursos.nombre': 'cuantica'}, {'nombre': 'mecanica'})
+jr.updateAll(collection, {'carreras.cursos.nombre': 'cuantica'}, {'nombre': 'mecanica'})
 ```
 ## pushAll
 ```javascript
-    jr.pushAll(collection,{'carreras.cursos.nombre': 'quimica'}, {'nombre': 'javascript', 'id': 6})
+jr.pushAll(collection,{'carreras.cursos.nombre': 'quimica'}, {'nombre': 'javascript', 'id': 6})
 ```
 ## removeAll
 ```javascript
-    jr.removeAll(collection, {'carreras.cursos.nombre': 'algebra'})
+jr.removeAll(collection, {'carreras.cursos.nombre': 'algebra'})
 ```
 
