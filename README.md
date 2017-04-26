@@ -74,7 +74,12 @@ var collection = [
 ## Functions
 
 ```javascript
-collection.findAll({ 'carreras.cursos.nombre': 'cuantica'})
+var jr = require('json-recursive');
+```
+
+
+```javascript
+jr.findAll(collection, { 'carreras.cursos.nombre': 'cuantica'})
 ```
 
 ```javascript
