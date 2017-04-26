@@ -74,35 +74,18 @@ var collection = [
 ## Functions
 
 ```javascript
-var jr = require('json-recursive');
-```
+    var jr = require('json-recursive');
 
+## findAll
+    jr.findAll(collection, { 'carreras.cursos.nombre': 'cuantica'})
 
-```javascript
-jr.findAll(collection, { 'carreras.cursos.nombre': 'cuantica'})
-```
+## updateAll
+    jr.updateAll(collection, {'carreras.cursos.nombre': 'cuantica'}, {'nombre': 'mecanica'})
 
-```javascript
-collection.chain()
-  .findAll('carreras.cursos.nombre': 'cuantica')
-  .updateAll({'nombre': 'mecanica'})
-  .value()
-```
+## pushAll
+    jr.pushAll(collection,{'carreras.cursos.nombre': 'quimica'}, {'nombre': 'javascript', 'id': 6})
 
-```javascript
-collection.chain()
-  .pushAll({'carreras.cursos.nombre': 'cuantica'}, {'nombre': 'javascript', 'id': 100})
-  .value()
+## removeAll
+    jr.removeAll(collection, {'carreras.cursos.nombre': 'algebra'})
 
-//or
-collection.chain()
-  .findAll({"carreras.rating": 4.3})
-  .pushAll({"cursos": {'nombre': 'javascript', 'id': 100})
-  .value()
-```
-
-```javascript
-collection.chain()
-  .removeAll({'carreras.cursos.nombre': 'cuantica'})
-  .value()
 ```
