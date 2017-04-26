@@ -89,7 +89,7 @@ var removeAll = function(array, remove) {
   array = listFinal
   return array
 }
-var findAll = function(array, where) {
+var findAll   = function(array, where) {
   var list = []
   _.forIn(where, function(value, key) {
     recursive('FIND', null, array, key, value, function(dato) {
@@ -115,13 +115,13 @@ var findAll = function(array, where) {
   array = listFinal
   return array
 }
-var updateAll =  function(array, update, where) {
-  _.forIn(update, function(value, key) {
-    recursive('UPDATE', where, array, key, value, function(dato) {})
+var updateAll = function(array, where, update) {
+  _.forIn(where, function(value, key) {
+    recursive('UPDATE', update, array, key, value, function(dato) {})
   })
   return array
 }
-var pushAll = function(array, where, push) {
+var pushAll   = function(array, where, push) {
   var list = []
   _.forIn(where, function(value, key) {
     recursive('PUSH', push, array, key, value, function(dato) {
@@ -147,6 +147,7 @@ var pushAll = function(array, where, push) {
   array = listFinal
   return array
 }
+
 module.exports = {
   findAll: findAll,
   pushAll: pushAll,

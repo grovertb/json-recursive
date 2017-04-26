@@ -1,4 +1,9 @@
-# json-recursive
+json-recursive
+============
+[![GitHub Stars](https://img.shields.io/github/stars/grovertb/json-recursive.svg)](https://github.com/grovertb/json-recursive/stargazers) 
+[![GitHub Issues](https://img.shields.io/github/issues/grovertb/json-recursive.svg)](https://github.com/grovertb/json-recursive/issues) 
+[![Current Version](https://img.shields.io/github/release/grovertb/json-recursive.svg)](https://github.com/grovertb/json-recursive) 
+
 ```javascript
 var collection = [
     {
@@ -94,4 +99,3 @@ jr.pushAll(collection,{'carreras.cursos.nombre': 'quimica'}, {'nombre': 'javascr
 ```javascript
 jr.removeAll(collection, {'carreras.cursos.nombre': 'algebra'})
 ```
-
